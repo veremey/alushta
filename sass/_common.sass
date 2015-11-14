@@ -72,7 +72,10 @@ body
 	padding: 0 20px
 	margin: 0 auto
 	+clr
-
+.clear
+	clear: both
+	display: table
+	height: 0
 
 a
 	text-decoration: none
@@ -131,19 +134,20 @@ $blue: #021732
 	vertical-align: top
 	font-size: 0
 	z-index: 100
+	box-shadow: 0px 2px 7px 1px rgb(2, 23, 50)
 	+box
 	+clr
-	&:before
-		content: ""
-		position: absolute
-		width: 100%
-		height: 90%
-		left: 0
-		right: 0
-		top: 0
-		bottom: 0
-		z-index: -1
-		box-shadow: -6px 5px 23px 0px rgb(2, 23, 50)
+	// &:before
+	// 	content: ""
+	// 	position: absolute
+	// 	width: 100%
+	// 	height: 90%
+	// 	left: 0
+	// 	right: 0
+	// 	top: 0
+	// 	bottom: 0
+	// 	z-index: -1
+	// 	box-shadow: -6px 5px 23px 0px rgb(2, 23, 50)
 	li
 		display: inline-block
 		width: 48%
@@ -216,9 +220,84 @@ h1
 	+box
 
 
+.footer__left
+	float: left
+	+clr
+.share
+	font-size: 36px
+	line-height: 40px
+	color: #FFF
+	vertical-align: top
+.soc
+	margin-top: 80px
+	+clr
+	a
+		position: relative
+		float: left
+		margin-right: 25px
+		transform-style: preserve-3d
+		perspective: 600px
+		+tr(.3s)
+		&:last-child
+			margin-right: 0
+		&:hover
+			transform: rotateY(180deg)
+		&:active
+			+scale(.9)
+			+tr(0)
 
+@each $s in vk,f,ok,inst,tw,mail,google
+	.#{$s}
+		+s(#{$s})
 
+.footer__right
+	width: 60%
+	float: right
+	margin-right: 35px
+	+clr
+.footer__menu
+	font-size: 0
+	margin-bottom: 70px
+	+justify
+	li
+		display: inline-block
+		height: 40px
+	a
+		display: block
+		font-size: 36px
+		line-height: 40px
+		color: #FFF
+		&:hover
+			color: #6D8DB7
 
+.footer__form
+	float: left
+	margin-top: 10px
+	input
+		height: 46px
+		width: 342px
+		padding: 0 20px
+		font-size: 24px
+		+placeholder
+			font-size: 24px
+			color: #6D8DB7
+			font-style: italic
+			letter-spacing: -.5px
+	button
+		padding: 0 30px
+		height: 45px
+		border-bottom: 1px solid #2a4e7b
+		color: #fff
+		letter-spacing: -.5px
+		font-size: 24px
+		vertical-align: top
+		margin-left: 18px
+		background-color: #6D8DB7
+		&:hover
+			background-color: darken(#6D8DB7, 15%)
+		&:active
+			-webkit-box-shadow: inset 0 0 3px 1px #ccc
+			box-shadow: inset 0 0 3px 1px #ccc
 
 
 

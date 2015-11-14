@@ -28,6 +28,12 @@
 		&:hover
 			text-decoration: none
 
+.wraper
+	width: 75%
+	float: left
+	+clr
+	.box
+		width: 31%
 .box
 	// display: inline-block
 	float: left
@@ -39,9 +45,22 @@
 	-webkit-border-radius: 1px
 	border-radius: 1px
 	+box
+.box__big
+	width: 62%
+	margin-right: 0
+	float: left
+	vertical-align: top
+	margin-bottom: 20px
+	padding: 20px
+	border: 1px solid #000
+	-webkit-border-radius: 1px
+	border-radius: 1px
 .event
+	display: block
 	margin-bottom: 17px
 	+clr
+	&:hover
+		opacity: 0.8
 	&:last-child
 		margin-bottom: 10px
 	&__img
@@ -56,14 +75,6 @@
 .detale
 	height: 50px
 	margin-bottom: 30px
-	// -webkit-border-image: url("../img/bd.png") 2 repeat
-	// -moz-border-image: url("../img/bd.png") 2 repeat
-	// -o-border-image: url("../img/bd.png") 2 repeat
-	// border-image: url("../img/bd.png") 2 repeat
-
-	// border-top: 0
-	// border-right: 0
-	// border-left: 0
 	border-bottom: 1px dotted #000
 	a
 		position: relative
@@ -72,7 +83,8 @@
 		position: relative
 		margin-right: 50px
 		&:hover
-			color: #6D8DB7
+			em
+				color: #6D8DB7
 .date
 	padding-left: 35px
 	&:before
@@ -124,14 +136,22 @@
 	-webkit-border-radius: 1px
 	border-radius: 1px
 	padding: 0 10px
+	font-size: 26px
 	+box
 
-.img_border
+.instagram__link
+	display: block
+	vertical-align: top
+	margin-bottom: 22px
 	border: 1px solid #000
 	-webkit-border-radius: 1px
 	border-radius: 1px
-	margin-bottom: 22px
 	width: 100%
 	max-width: 100%
 	&:last-child
 		margin-bottom: 0
+	&:hover
+		opacity: 0.8
+	img
+		vertical-align: top
+		max-width: 100%
