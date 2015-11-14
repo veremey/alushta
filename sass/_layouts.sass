@@ -1,0 +1,137 @@
+.slider
+	width: 100%
+	height: 475px
+	background-image: url("../img/alushta.jpg")
+	background-repeat: repeat-x
+	background-position: 0
+.city
+	animation: city 30s linear infinite reverse
+	+gpu
+	will-change: transform
+
+@keyframes city
+	from
+		background-position: -1920px 100%, 120% 30%, 120% 15%, 0 0
+	to
+		background-position: 0 100%, -200% 10%, -50% 15%, 0 0
+
+.wide__menu
+	+justify
+	li
+		display: inline-block
+		vertical-align: top
+	a
+		font-size: 26px
+		color: #000
+		line-height: 100px
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+
+.box
+	// display: inline-block
+	float: left
+	vertical-align: top
+	margin-right: 25px
+	margin-bottom: 20px
+	padding: 20px
+	border: 1px solid #000
+	-webkit-border-radius: 1px
+	border-radius: 1px
+	+box
+.event
+	margin-bottom: 17px
+	+clr
+	&:last-child
+		margin-bottom: 10px
+	&__img
+		width: 110px
+		float: left
+		margin-right: 10px
+		img
+			max-width: 100%
+			vertical-align: top
+
+
+.detale
+	height: 50px
+	margin-bottom: 30px
+	// -webkit-border-image: url("../img/bd.png") 2 repeat
+	// -moz-border-image: url("../img/bd.png") 2 repeat
+	// -o-border-image: url("../img/bd.png") 2 repeat
+	// border-image: url("../img/bd.png") 2 repeat
+
+	// border-top: 0
+	// border-right: 0
+	// border-left: 0
+	border-bottom: 1px dotted #000
+	a
+		position: relative
+		display: inline-block
+		line-height: 50px
+		position: relative
+		margin-right: 50px
+		&:hover
+			color: #6D8DB7
+.date
+	padding-left: 35px
+	&:before
+		content: ""
+		position: absolute
+		top: 12px
+		left: 0px
+		+s(data)
+	&:hover::before
+		+s(data-h)
+.human
+	padding-left: 35px
+	&:before
+		content: ""
+		position: absolute
+		top: 14px
+		left: 0px
+		+s(user)
+	&:hover::before
+		+s(user-h)
+.comment
+	padding-left: 40px
+	&:before
+		content: ""
+		position: absolute
+		top: 14px
+		left: 0px
+		+s(comment)
+	&:hover::before
+		+s(comment-h)
+
+.box__text
+	p
+		font-size: 24px
+		color: #000
+
+.box__text_img
+	width: 47%
+	margin: 0 15px 15px 0
+	float: left
+	img
+		max-width: 100%
+		vertical-align: top
+
+.search
+	width: 100%
+	height: 56px
+	border: 1px solid #455569
+	-webkit-border-radius: 1px
+	border-radius: 1px
+	padding: 0 10px
+	+box
+
+.img_border
+	border: 1px solid #000
+	-webkit-border-radius: 1px
+	border-radius: 1px
+	margin-bottom: 22px
+	width: 100%
+	max-width: 100%
+	&:last-child
+		margin-bottom: 0
