@@ -34,3 +34,12 @@ em
 	+clr
 	&:hover
 		text-decoration: none
+
+.popup
+	+coverdiv
+	position: fixed
+	background-color: rgba(0, 0, 0, .3)
+	z-index: 3000
+	display: none
+	&.is_active
+		display: block
