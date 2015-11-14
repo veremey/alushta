@@ -68,7 +68,7 @@ h1 { font: 0/0 a; text-shadow: none; color: transparent; }
 .menu a { font-size: 40px; color: #FFF; line-height: 100px; letter-spacing: -2px; font-family: "MyriadProCond", Arial, sans-serif; }
 .menu a:hover { color: #6D8DB7; }
 
-.footer { position: absolute; width: 100%; left: 0; right: 0; height: 350px; background-color: #021732; padding: 85px 0 119px; margin-top: 160px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.footer { position: absolute; width: 100%; left: 0; right: 0; height: 350px; background-color: #021732; padding: 85px 0 119px; margin-top: 160px; min-width: 1280px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .footer__left { float: left; *zoom: 1; }
 .footer__left:after { content: " "; display: table; clear: both; }
