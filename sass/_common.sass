@@ -1,56 +1,4 @@
-// # SHORT HOWTO
-// ## Sprites
-//     .whatever
-//          +sized-sprite($icons, coderiver) //or
-// 			+s(codedby) //gets default value for spritemap as $icons
-// ### animation example
-//     +include keyframes(rotate)
-//        from
-//           +rotate(0)
-//        to
-//           +rotate(360)
-// ## animation usage
-//     body:hover
-// 	    +animation(rotate 200s linear infinite)
-// ## animations easing, see easings.net for full list and examples, tnx @ai
-//     transition: all 1.2s ceaser($ease-in)
-// ## gradient example
-//     +background-image(linear-gradient(#232323, #5c5c5c));
-//     +g(#232323, #5c5c5c);
-//	   horizontal
-//     +gh(#232323, #5c5c5c);
-// ## making bw-images
-//     img
-//			@extend %gray
-// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
-//     +min-screen(320)
-//			display: none
-// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
-//
-// ## use cycles
-//     @for $i from 1 through 3
-//       .item-#{$i}
-//			width: 2em * $i;
-//     @each $s in a,b,c
-// 	    	#{$s}
-//				display: none
-
-// @each $s in icon_locate,icon_latter,icon_tel
-// 		.#{$s}
-// 			+s(#{$s})
-
-// ## fonts
-// Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)
-// =book
-// 	font-family: "book", Arial, sans-serif
-// insert pics into css
-// div
-// 	+pic("blabla.png")
-// span
-// 	+png(blabla)
-// p
-// 	+jpg(bla)
+// done by skype: baxazar mail: veremey4uk@gmail.com
 
 +font(MyriadProCond, MyriadProCond)
 =m
@@ -84,7 +32,11 @@ a
 
 $n: transparent
 $blue: #021732
-// common blocks
+
+*
+	+selection
+		color: #1A79E6
+		background-color: rgba(236, 185, 7, .5)
 
 .header
 	+clr
@@ -163,7 +115,6 @@ $blue: #021732
 	height: 100px
 	+clr
 
-
 h1
 	+hidetext
 .logo
@@ -193,8 +144,6 @@ h1
 		&:hover
 			color: #6D8DB7
 
-
-
 .footer
 	position: absolute
 	width: 100%
@@ -206,8 +155,6 @@ h1
 	margin-top: 160px
 	min-width: 1280px
 	+box
-
-
 .footer__left
 	float: left
 	+clr
@@ -286,4 +233,3 @@ h1
 		&:active
 			-webkit-box-shadow: inset 0 0 3px 1px #ccc
 			box-shadow: inset 0 0 3px 1px #ccc
-

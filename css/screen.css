@@ -32,6 +32,9 @@ body { font-size: 24px; line-height: 1; color: #000; font-family: "MyriadProCond
 
 a { text-decoration: none; }
 
+* ::selection { color: #1A79E6; background-color: rgba(236, 185, 7, 0.5); }
+* ::-moz-selection { color: #1A79E6; background-color: rgba(236, 185, 7, 0.5); }
+
 .header { *zoom: 1; }
 .header:after { content: " "; display: table; clear: both; }
 .header__top { position: relative; height: 125px; background-color: #FFF; float: right; margin-right: 5px; *zoom: 1; }
