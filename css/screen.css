@@ -23,9 +23,9 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 @font-face { font-family: MyriadProCond; src: url("fonts/MyriadProCond.eot"); src: url("fonts/MyriadProCond.eot?#iefix") format("embedded-opentype"), url("fonts/MyriadProCond.woff2") format("woff2"), url("fonts/MyriadProCond.woff") format("woff"), url("fonts/MyriadProCond.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 body { font-size: 24px; line-height: 1; color: #000; font-family: "MyriadProCond", Arial, sans-serif; }
 
-.out { position: relative; margin: 0 auto; min-height: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.out { position: relative; margin: 0 auto; min-height: 100%; min-width: 1280px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.container { width: 1280px; padding: 0 20px; margin: 0 auto; *zoom: 1; }
+.container { width: 1280px; padding: 0 20px; margin: 0 auto; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; *zoom: 1; }
 .container:after { content: " "; display: table; clear: both; }
 
 .clear { clear: both; display: table; height: 0; }
@@ -128,13 +128,13 @@ h1 { font: 0/0 a; text-shadow: none; color: transparent; }
 .wide__menu a { font-size: 26px; color: #000; line-height: 100px; text-decoration: underline; }
 .wide__menu a:hover { text-decoration: none; }
 
-.wraper { width: 75%; float: left; *zoom: 1; }
+.wraper { width: 78%; float: left; *zoom: 1; }
 .wraper:after { content: " "; display: table; clear: both; }
-.wraper .box { width: 31%; }
+.wraper .box { width: 32%; }
 
 .box { float: left; vertical-align: top; margin-right: 25px; margin-bottom: 20px; padding: 20px; border: 1px solid #000; -webkit-border-radius: 1px; border-radius: 1px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.box__big { width: 62%; margin-right: 0; float: left; vertical-align: top; margin-bottom: 20px; padding: 20px; border: 1px solid #000; -webkit-border-radius: 1px; border-radius: 1px; }
+.box__big { width: 61%; margin-right: 0; float: left; vertical-align: top; margin-bottom: 20px; padding: 20px; border: 1px solid #000; -webkit-border-radius: 1px; border-radius: 1px; }
 
 .event { display: block; margin-bottom: 17px; *zoom: 1; }
 .event:after { content: " "; display: table; clear: both; }
